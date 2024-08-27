@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:Shushu1302@db:3306/moneyboard
+      - ALPHA_VANTAGE_API_KEY1=OHS7VH2M6KJDK54W
+      - ALPHA_VANTAGE_API_KEY2=MCWCTU1667SH2CKY
+      - ALPHA_VANTAGE_BASE_URL=https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency={}&to_currency={}&apikey={}
+    command: >
+      sh -c "while ! nc -z db 3306;
+      do
+        echo 'Waiting for MySQL...';
+        sleep 3;
+      done;
+      uvicorn app.main:app --host 0.0.0.0 --port 80"
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Shushu1302
+      MYSQL_DATABASE: moneyboard
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

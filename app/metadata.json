@@ -1,0 +1,31 @@
+{
+  "title_api": "Capital Hub",
+  "version_api": "1.1.0",
+  "description": "**Welcome to Capital Hub API!** 🎉\n\nEnvironment: PRODUCTION.\n\nEasily track and manage your financial transactions while gaining insights into your spending habits. Here's what you can do:\n\n### Features\n* **Add New Transactions**: Seamlessly post new financial transactions to the database.\n* **Retrieve Transactions**: Access detailed lists of your transactions effortlessly.\n* **Filter Transactions**: Apply various filters to find specific transactions based on your criteria.\n* **Delete Transactions**: Remove transactions from the database with ease.",
+  "tags_metadata": [
+    {
+      "name": "Capital Hub",
+      "description": "Minimal manipulation of data, focusing on reading, posting, and deleting data. This is your go-to place to validate, post, and delete entries directly in the database."
+    },
+    {
+      "name": "Capital Hub Metrics",
+      "description": "Get metrics on your financial spending without converting currencies, offering raw insights into your expenditure patterns."
+    },
+    {
+      "name": "Capital Hub Insights",
+      "description": "Gain enhanced insights into financial spending by considering foreign exchange rates, giving you a comprehensive view of your expenses across different currencies."
+    },
+    {
+      "name": "Capital Hub Reports",
+      "description": "Generate comprehensive and detailed reports that provide insights into your spending patterns, financial growth, and budgeting trends over time. With monthly breakdowns, these reports help you track your financial health, identify spending habits, and make informed decisions to optimize your capital management."
+    },
+    {
+      "name": "Capital Hub Configs",
+      "description": "See the tables, accepted values when querying, and add new values to the SQL. Making your financial journey unique to you."
+    },
+    {
+      "name": "Forex",
+      "description": "Fetch forex data from Alpha Vantage to support the insights endpoint with accurate and up-to-date foreign exchange information."
+    }
+  ]
+}

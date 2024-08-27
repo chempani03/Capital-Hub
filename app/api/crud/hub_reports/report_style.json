@@ -1,0 +1,70 @@
+{
+  "background_colors": "#003b5c",
+  "palette": "viridis",
+  "subplot": {
+    "dims": [2, 2],
+    "fig_size": [30, 30],
+    "gridspec": {
+      "height_ratios": [1.5, 1],
+      "linewidth": 5,
+      "color": "ffffff"
+    }
+  },
+  "metric_color_codes": {
+    "income": "limegreen",
+    "expense": "orange",
+    "balance": "cyan"
+  },
+  "text_style": {
+    "color": "#ffffff",
+    "title": {
+      "font": 16,
+      "pad": 20
+    },
+    "label": {
+      "color": "#d3d3d3",
+      "font": 12,
+      "labelpad": 20
+    }
+  },
+  "graph_grid_style": {
+    "style": "--",
+    "major_width": 0.5,
+    "minor_width": 0.25
+  },
+  "bar_graph_style": {
+    "background_color": "#003b5c",
+    "alpha": 0.7,
+    "edge_color": "#ffffff",
+    "line_width": 1.5,
+    "bar_width": 0.6,
+    "hatch": "////",
+    "zorder": 3
+  },
+  "main_title": {
+    "text": "Financial Report for Month: ",
+    "font_size": 64,
+    "font_weight": "bold",
+    "color": "#ffffff"
+  },
+  "graph_1": {
+    "title": "Total Financial Amounts",
+    "y_label": "Total Amount: ",
+    "x_rotation": 45
+  },
+  "graph_2": {
+    "title": "Total Income by Category",
+    "y_label": "Category",
+    "x_label": "Total Amount"
+  },
+  "graph_3": {
+    "title": "Total Expenses by Category",
+    "y_label": "Category",
+    "x_label": "Total Amount"
+  },
+  "graph_4": {
+    "title": "Metrics as a Functon of Time",
+    "y_label": "Cumulative Amount",
+    "x_label": "Date"
+  }
+}

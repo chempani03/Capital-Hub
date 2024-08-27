@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+databases
+pymysql
+cryptography
+requests
+pandas
+seaborn
+matplotlib
