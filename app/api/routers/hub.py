@@ -25,7 +25,7 @@ def read_all_transactions(db: Session = Depends(get_db)):
     
     return get_overview(db)
 
-@router.get("/transactions/")
+@router.get("/transactions/",response_model= List[TransOverViewBase])
 def read_filtered_transactions(
     startdate: datetime = Query(...),
     enddate: datetime = Query(...),
@@ -54,7 +54,7 @@ def read_filtered_transactions(
     """
     return get_transactions(db, startdate, enddate, currency, transaction_type, account, category)
 
-@router.get("/transaction/{transaction_id}/")
+@router.get("/transaction/{transaction_id}/", response_model=List[TransOverViewBase])
 def read_transaction_by_id(transaction_id:str,
                            db : Session = Depends(get_db)):
     """
