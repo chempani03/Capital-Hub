@@ -5,3 +5,6 @@ The **Capital Hub API** is designed to address the growing complexity of managin
 As an undergraduate student specializing in **Data Science** 📊 and **Digital Business** 💻, I developed Capital Hub not only as a personal project to enhance my financial literacy 💡 but also as a learning platform to refine my skills in **FastAPI** ⚡, **SQL** 🛢️, and **Python** 🐍. By centralizing financial data, this API empowers users to make informed decisions, optimize their financial strategies, and ultimately achieve greater control over their financial future. 🎯
 
 Whether you're a fellow student 🎓, a budding entrepreneur 🚀, or anyone looking to take charge of their finances, the **Capital Hub API** is your gateway to financial clarity and empowerment. 💰✨
+
+![Monthly Report Preview](assets/report_preview.png)
+
