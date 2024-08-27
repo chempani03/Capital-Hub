@@ -6,5 +6,4 @@ As an undergraduate student specializing in **Data Science** 📊 and **Digital 
 
 Whether you're a fellow student 🎓, a budding entrepreneur 🚀, or anyone looking to take charge of their finances, the **Capital Hub API** is your gateway to financial clarity and empowerment. 💰✨
 
-![Monthly Report Preview](assets/report_preview.png)
-
+![Monthly Report Preview](assets/mock_report.pdf)
