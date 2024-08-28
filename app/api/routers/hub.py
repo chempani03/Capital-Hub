@@ -186,7 +186,7 @@ def delete_transaction_id(transaction_id: str,
     return delete_transaction(db,transaction_id)
 
 
-@router.put("/update_transaction/{transaction_id}/")
+@router.patch("/update_transaction/{transaction_id}/")
 def update_transaction(transaction_id: str,
                        transaction_update: TransactionUpdate,
                        db: Session = Depends(get_db)):
