@@ -10,9 +10,8 @@ services:
     depends_on:
       - db
     environment:
-      - DATABASE_URL=mysql+pymysql://root:Shushu1302@db:3306/moneyboard
-      - ALPHA_VANTAGE_API_KEY1=OHS7VH2M6KJDK54W
-      - ALPHA_VANTAGE_API_KEY2=MCWCTU1667SH2CKY
+      - DATABASE_URL=YOUR_DB_URL
+      - ALPHA_VANTAGE_API_KEY1=YOUR_API_KEY
       - ALPHA_VANTAGE_BASE_URL=https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency={}&to_currency={}&apikey={}
     command: >
       sh -c "while ! nc -z db 3306;
@@ -26,8 +25,8 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: Shushu1302
-      MYSQL_DATABASE: moneyboard
+      MYSQL_ROOT_PASSWORD: YOUR_DB_PW
+      MYSQL_DATABASE: YOUR_DB_NAME
     ports:
       - "3306:3306"
     volumes:
